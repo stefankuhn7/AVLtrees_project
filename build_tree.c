@@ -55,6 +55,8 @@ int Build_tree(char * file1, char * file2){
         fprintf(stderr, "Invalid output type\n");
         return -1;
     }
+    
+    Preorder_write(output, root);
 
     fclose(output);
 
